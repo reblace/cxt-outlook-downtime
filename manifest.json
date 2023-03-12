@@ -1,0 +1,19 @@
+{
+  "name": "Outlook Webmail Downtime Warning",
+  "description": "Changes the send button in outlook webmail to yellow outside of configured hours/days.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://outlook.office365.us/mail/*"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ]
+}

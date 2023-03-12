@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outlook Downtime Options</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col">
+                <p class="h2">Configuration Settings</p>
+                <pre>
+                    All settings are local time.
+                    Select the hours and days you want a reminder not to send email.
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="h3">Downtime Hours</p>
+                <fieldset>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h0"><label class="form-check-label" for="h0">0000 (midnight)</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h1"><label class="form-check-label" for="h1">0100</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h2"><label class="form-check-label" for="h2">0200</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h3"><label class="form-check-label" for="h3">0300</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h4"><label class="form-check-label" for="h4">0400</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h5"><label class="form-check-label" for="h5">0500</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h6"><label class="form-check-label" for="h6">0600</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h7"><label class="form-check-label" for="h7">0700</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h8"><label class="form-check-label" for="h8">0800</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h9"><label class="form-check-label" for="h9">0900</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h10"><label class="form-check-label" for="h10">1000</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h11"><label class="form-check-label" for="h11">1100</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h12"><label class="form-check-label" for="h12">1200 (noon)</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h13"><label class="form-check-label" for="h13">1300</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h14"><label class="form-check-label" for="h14">1400</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h15"><label class="form-check-label" for="h15">1500</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h16"><label class="form-check-label" for="h16">1600</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h17"><label class="form-check-label" for="h17">1700</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h18"><label class="form-check-label" for="h18">1800</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h19"><label class="form-check-label" for="h19">1900</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h20"><label class="form-check-label" for="h20">2000</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h21"><label class="form-check-label" for="h21">2100</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h22"><label class="form-check-label" for="h22">2200</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="h23"><label class="form-check-label" for="h23">2300</label></div>
+                </fieldset>
+            </div>
+            <div class="col">
+                <p class="h3">Downtime Days</p>
+                <fieldset>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d0"><label class="form-check-label" for="d0">Sunday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d1"><label class="form-check-label" for="d1">Monday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d2"><label class="form-check-label" for="d2">Tuesday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d3"><label class="form-check-label" for="d3">Wednesday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d4"><label class="form-check-label" for="d4">Thursday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d5"><label class="form-check-label" for="d5">Friday</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="d6"><label class="form-check-label" for="d6">Saturday</label></div>
+                </fieldset>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="save">Save</button>
+                <label class="form-label" id="status"></label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="scripts/options.js"></script>
+</body>
+</html>
