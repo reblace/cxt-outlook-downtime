@@ -20,9 +20,7 @@ chrome.storage.sync.get({
    downtimeDays = items.days;
 });
 
-INTERVAL = 1000;
-// Look for the element on an interval
-setInterval(() => {
+const updateButton = () => {
    const sendButton = document.querySelector('button[title="Send"].ms-Button');
    debug(sendButton);
 
@@ -42,5 +40,11 @@ setInterval(() => {
          sendButton.classList.remove('ms-Button--warn');
       }
    }
-}, INTERVAL);
+};
 
+const INTERVAL = 1000;
+const run = () => {
+   updateButton();
+   setTimeout(() => run(), INTERVAL);
+};
+run();
